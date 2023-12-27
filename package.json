@@ -1,0 +1,25 @@
+{
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.1",
+    "@astrojs/node": "^6.0.4",
+    "astro": "^3.5.5",
+    "htmx.org": "^1.9.8",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.143",
+    "@unocss/preset-icons": "^0.57.5",
+    "@unocss/reset": "^0.57.5",
+    "unocss": "^0.57.5"
+  }
+}

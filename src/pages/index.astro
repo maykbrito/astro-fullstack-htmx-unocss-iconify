@@ -1,0 +1,31 @@
+---
+
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<script type="module">
+			import './node_modules/htmx.org/dist/htmx.min.js'
+		</script>
+	</head>
+	<body class="p-8">
+
+		<section class="container mx-auto">				 
+			<button class="rounded p-4 border w-full hover:bg-yellow-100"
+			hx-get="/api/random-word"
+			hx-target="#container"
+			hx-trigger="click"
+			hx-swap="afterbegin"
+			>
+			Click to get new urban Word
+			<span></span>
+			</button>
+		
+			<main id="container" class="mt-8 flex flex-col gap-2"></main>
+		</section>
+	</body>
+</html>
